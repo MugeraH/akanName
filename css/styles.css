@@ -11,9 +11,23 @@ body {
   position: relative;
 }
 
+
 .navbar {
-  background-color: #000;
+  background-color: #fff;
 }
+
+.navbar .navbar-brand {
+  color: #e54033;
+  font-size: 40px;
+  border-bottom: 2px solid black;
+  border-right: none;
+}
+.navbar a {
+  color: #e54033;
+  font-size: 1.2em;
+  border-right:2px solid #e54033;
+}
+
 
 .container {
   background-color: white;
