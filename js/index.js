@@ -1,5 +1,7 @@
 let userForm = document.querySelector('form');
 
+var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+
 userForm.addEventListener("submit", (e)=>{
   e.preventDefault()
 
@@ -8,7 +10,7 @@ userForm.addEventListener("submit", (e)=>{
 
 
   gender = document.querySelector('input[name="genderRadio"]:checked').value;
-
+  myModal.show()
   
   console.log(date,gender);
 })
