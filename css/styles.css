@@ -15,6 +15,25 @@ body {
   background-color: #000;
 }
 
+.container {
+  background-color: white;
+  height: 75vh;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.container .row{
+  height: 100%;
+}
+.container .col-md-4 {
+  
+  background-color: teal;
+}
+.container .col-md-8 {
+  /* height: 100%; */
+  padding: 200px;
+  background-color: rgb(128, 58, 0);
+}
+
 
 
 footer {
