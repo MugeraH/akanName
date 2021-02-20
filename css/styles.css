@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Stick&display=swap");
 
-
 * {
   padding: 0;
   margin: 0;
@@ -27,10 +26,8 @@ body {
 .navbar a {
   color: #e54033;
   font-size: 1.2em;
-  border-right:2px solid #e54033;
+  border-right: 2px solid #e54033;
 }
-
-
 
 em {
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
@@ -66,6 +63,9 @@ em {
   position: relative;
   background-color: #e54033;
   border-radius: 41% 59% 60% 40% / 1% 100% 0% 99%;
+  -webkit-box-shadow: -1px 2px 7px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -1px 2px 7px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 2px 7px 1px rgba(0, 0, 0, 0.5);
 }
 .container .row .col-md-8 .panel {
   transform: rotate(-6deg);
@@ -80,9 +80,8 @@ em {
   width: 400px;
   margin-left: 200px;
   padding: 13px 20px;
-  -webkit-box-shadow: -1px 2px 7px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 2px 7px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 2px 7px 1px rgba(0, 0, 0, 0.75);
+  background: rgba(126, 44, 44, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .form .label {
   color: #fff;
@@ -90,10 +89,9 @@ em {
   margin-bottom: 5px;
 }
 
-.form-check{
-  padding:10px 20px 0px ;
+.form-check {
+  padding: 10px 20px 0px;
 }
-
 
 footer {
   position: absolute;
@@ -105,7 +103,6 @@ footer {
 
 footer .copyright p {
   line-height: 12px;
-
 }
 footer p a {
   color: #e54033;

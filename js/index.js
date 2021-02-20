@@ -1,6 +1,6 @@
 let userForm = document.querySelector('form');
 
-var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+var myModal = new bootstrap.Modal(document.getElementById('myModal'))
 
 userForm.addEventListener("submit", (e)=>{
   e.preventDefault()
