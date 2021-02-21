@@ -12,6 +12,12 @@ body {
   overflow-y: none;
   position: relative;
 }
+input[type="date"]:in-range::-webkit-datetime-edit-year-field,
+input[type="date"]:in-range::-webkit-datetime-edit-month-field,
+input[type="date"]:in-range::-webkit-datetime-edit-day-field,
+input[type="date"]:in-range::-webkit-datetime-edit-text {
+  color: transparent;
+}
 
 .navbar {
   background-color: #fff;

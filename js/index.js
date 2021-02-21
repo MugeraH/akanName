@@ -12,15 +12,34 @@ userForm.addEventListener("submit", (e)=>{
   dateToday = (new Date()).getDate()  
 myDate = (new Date(date)).getDate()  
 
+
+
+// Sunday: Kwasi Monday: Kwadwo Tuesday: Kwabena Wednesday: Kwaku Thursday:  Yaw Friday: Kofi Saturday: Kwame
+var maleAkanNames =["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+
+// Female Sunday: Akosua Monday: Adwoa Tuesday: Abenaa Wednesday: Akua Thursday:  Yaa Friday: Afua Saturday: Ama
+var femaleAkanNames =["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
+
+var dayOfWeek = ["Sunday","Monday","Teusday","Wednesday","Thursday","Friday","Saturday"]
+
+
+
 if(myDate > dateToday){
-console.log("PLease selcet valid date,you can not be born before today");
-}else{
-  console.log(myDate,dateToday,gender);
+console.log("PLease select valid date,you can not be born before today");
+return;
 }
 
 
+console.log(myDate,gender);
 
-  //myModal.show()
+
+
+
+myModal.show()
+function myFunction() {
+  document.querySelector("form").reset();
+}
+myFunction()
   
 
 })
