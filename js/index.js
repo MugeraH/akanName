@@ -2,6 +2,11 @@ let userForm = document.querySelector('form');
 
 var myModal = new bootstrap.Modal(document.getElementById('myModal'))
 
+//function to reset input fields
+function resetForm() {
+  document.querySelector("form").reset();
+}
+
 userForm.addEventListener("submit", (e)=>{
   e.preventDefault()
 
@@ -36,10 +41,7 @@ console.log(myDate,gender);
 
 
 myModal.show()
-function myFunction() {
-  document.querySelector("form").reset();
-}
-myFunction()
-  
+
+
 
 })

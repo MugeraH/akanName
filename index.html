@@ -166,14 +166,21 @@
           <div class="modal-header">
             <h5 class="modal-title" id="myModalLabel">Akan Name</h5>
             <button
+              onclick="resetForm()"
               type="button"
-              class="btn-close"
+              class="btn btn-outline-danger"
               data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            >  close</button>
+            
+            </button>
           </div>
+
           <div class="modal-body p-5">
-            <p>Your were born on Moday and your Akan name is Kwasi</p>
+            <p>Your were born on 
+              <span id="dayOfWeek">  Moday </span>
+              Moday and your Akan name is 
+              <span id="akanName">Kwasi</span>
+            </p>
           </div>
           <!-- <div class="modal-footer">
             <button

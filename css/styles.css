@@ -99,6 +99,21 @@ em {
   padding: 10px 20px 0px;
 }
 
+.modal-header {
+color:#e54033;
+
+}
+.modal-header h5{
+  font-size: 25px;
+}
+.modal-body{
+  background-color: #e54033;
+  color: #fff;
+  font-size: 25px;
+}
+
+
+
 footer {
   position: absolute;
   margin-top: 35px;
