@@ -2,17 +2,27 @@ let userForm = document.querySelector('form');
 let myModal = new bootstrap.Modal(document.getElementById('myModal'))
 let dayOfWeek = document.getElementById('dayOfWeek');
 let akanName = document.getElementById('akanName')
+let alert = document.getElementById('invalidDateAlert')
 
 //function to reset input fields
-function resetForm() {
+let resetForm =() =>{
   document.querySelector("form").reset();
 }
+
+//function to show error alert
+let showAlert = (message) =>{
+  alert.innerHTML = message
+}
+//function to hide error alert
+let closeAlert = ()=>{
+  alert.innerHTML = null
+  }
 
 userForm.addEventListener("submit", (e)=>{
   e.preventDefault()
 
-  dateValue = document.getElementById('date').value
-  gender = document.querySelector('input[name="genderRadio"]:checked').value;
+let  dateValue = document.getElementById('date').value
+let  gender = document.querySelector('input[name="genderRadio"]:checked').value;
 
 
 // get the day of week for the date the user selects,(ranges from 0-6)
@@ -44,7 +54,8 @@ let weekDay = ["Sunday","Monday","Teusday","Wednesday","Thursday","Friday","Satu
 
 // validate  date selected by user not to be date after current date
 if(selectedYear >= currentYear && selectedMonth >= currentMonth && selectedDay > currentDay){
-  console.log('problema');
+  showAlert("Please select valid date,you cant select date before today!")
+
   return
 }else{
 
@@ -56,7 +67,7 @@ if(selectedYear >= currentYear && selectedMonth >= currentMonth && selectedDay >
     akanName.innerHTML= femaleAkanNames[selectedDate]
   }
 }
-
+closeAlert()
 myModal.show()
 resetForm()
 
