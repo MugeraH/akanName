@@ -55,17 +55,22 @@ let weekDay = ["Sunday","Monday","Teusday","Wednesday","Thursday","Friday","Satu
 // validate  date selected by user not to be date after current date
 if(selectedYear >= currentYear && selectedMonth > currentMonth){
   showAlert("Please select valid date,you cant select date before today!")
-
   return
 }else{
 
+  if(selectedMonth >= currentMonth && selectedDay > currentDay){
+    // Please select valid date,you cant select date before today!
+    showAlert("Please select valid date,you cant select date before today!")
+      return
+  }
+  else{
   if(selectedDate >=0 && gender === "male"){
       dayOfWeek.innerHTML= weekDay[selectedDate]
     akanName.innerHTML= maleAkanNames[selectedDate]
   }else if(selectedDate >=0 && gender === "female"){
         dayOfWeek.innerHTML= weekDay[selectedDate]
     akanName.innerHTML= femaleAkanNames[selectedDate]
-  }
+  }}
 }
 closeAlert()
 myModal.show()
