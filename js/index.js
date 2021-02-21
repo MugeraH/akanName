@@ -53,7 +53,7 @@ let weekDay = ["Sunday","Monday","Teusday","Wednesday","Thursday","Friday","Satu
 
 
 // validate  date selected by user not to be date after current date
-if(selectedYear >= currentYear && selectedMonth >= currentMonth && selectedDay > currentDay){
+if(selectedYear >= currentYear && selectedMonth > currentMonth){
   showAlert("Please select valid date,you cant select date before today!")
 
   return
