@@ -2,6 +2,8 @@ let userForm = document.querySelector('form');
 
 var myModal = new bootstrap.Modal(document.getElementById('myModal'))
 
+let dayOfWeek = document.getElementById('dayOfWeek');
+let akanName = document.getElementById('akanName')
 //function to reset input fields
 function resetForm() {
   document.querySelector("form").reset();
@@ -25,7 +27,7 @@ var maleAkanNames =["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 // Female Sunday: Akosua Monday: Adwoa Tuesday: Abenaa Wednesday: Akua Thursday:  Yaa Friday: Afua Saturday: Ama
 var femaleAkanNames =["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
 
-var dayOfWeek = ["Sunday","Monday","Teusday","Wednesday","Thursday","Friday","Saturday"]
+var weekDay = ["Sunday","Monday","Teusday","Wednesday","Thursday","Friday","Saturday"]
 
 
 
@@ -34,8 +36,9 @@ console.log("PLease select valid date,you can not be born before today");
 return;
 }
 
+dayOfWeek.innerHTML = weekDay[0]
+akanName.innerHTML = maleAkanNames[0]
 
-console.log(myDate,gender);
 
 
 
